@@ -1,0 +1,137 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #FFC0CB;
+    font-family: 'Mulish', sans-serif;
+    box-sizing: border-box;
+}
+
+.heading {
+    font-weight: 800;
+    font-family: 'Monsterrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white
+}
+
+.container {
+    display: flex;
+}
+
+
+
+.keywords {
+    width: 30%;
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    min-height: 20px;
+    font-weight: 200;
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.1);
+    background-color: rgb(169, 248, 66);
+    outline: none;
+    border: none;
+}
+
+.keywords-inner {
+    padding-top: 0px;
+
+}
+
+.keyword {
+    display: inline-block;
+    background-color: #FFC0CB;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.speech-container {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    margin: 10px;
+    padding: 0px;
+}
+
+.text_canvas {
+    height: auto;
+    min-height: 60px;
+    min-width: 60px;
+    padding: 20px;
+    border-radius: 10px;
+    flex-grow: 1;
+    background-color: white;
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: 0px 10px;
+}
+
+
+.mic {
+    border-radius: 5px;
+    max-height: 60px;
+    background-color: white;
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.1);
+    background-color: #C0C0C0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: 20px;
+
+
+}
+
+.recording {
+    background-color: rgb(169, 248, 66);
+
+}
+
+.icons {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    height: 50vh;
+}
+
+.icon {
+    position: absolute;
+    bottom: 0px;
+    font-size: 5rem;
+    text-align: center;
+}
+
+
+
+.show {
+    transform: translateY(-3500%);
+    transition: all 3s ease-in-out;
+    opacity: 0.5;
+}
+
+
+.emojione {
+    margin: 0px !important;
+    display: inline !important;
+
+    height: auto;
+    width: 50px;
+}
+
+@media screen and (max-width:1000px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .speech-container {
+        padding: 20px
+    }
+
+    .keywords {
+        width: 80%;
+        align-self: center;
+    }
+
+    .mic {
+        margin-right: 0px;
+    }
+}
